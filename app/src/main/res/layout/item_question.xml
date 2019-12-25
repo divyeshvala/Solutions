@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_question_layout"
+    >
+
+    <TextView
+        android:id="@+id/id_item_question_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/alegreya_sans_medium_italic"
+        android:text="This is the long question for testing purpose aa alright. Wait I have tmake it more longer?"
+        android:textColor="#242323"
+        android:textSize="22sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/id_item_question_profilePhoto"
+        android:layout_below="@+id/id_item_question_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/profile_small"
+        />
+
+    <ImageView
+        android:layout_below="@+id/id_item_question_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/circle_crop"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_author"
+        android:layout_toRightOf="@+id/id_item_question_profilePhoto"
+        android:layout_below="@+id/id_item_question_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Divyesh Vala"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/id_item_question_about"
+        android:layout_toRightOf="@+id/id_item_question_profilePhoto"
+        android:layout_below="@+id/id_item_question_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="Cse guy from mnnit."
+        android:textSize="13sp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_time"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/id_item_question_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="10 Aug"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_item_question_about"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:maxHeight="80dp"
+        android:text="Answer starts from here and it goes on is the long question for testing purpose aa alright. Wait I have tmake it more longer?"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/id_item_question_like"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:src="@drawable/like0"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/id_item_question_answer"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        />
+    <TextView
+        android:id="@+id/id_item_question_numberOfLikes"
+        android:layout_toRightOf="@+id/id_item_question_like"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/id_item_question_answer"
+        android:layout_marginLeft="2dp"
+        android:text="100+"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_readMore"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/id_item_question_answer"
+        android:layout_marginRight="20dp"
+        android:text="Read more..."
+        android:background="#fff"
+        android:textStyle="italic"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>

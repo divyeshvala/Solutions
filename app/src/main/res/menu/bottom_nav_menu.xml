@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_trending"
+        android:icon="@drawable/trending"
+        android:title="Trending" />
+
+    <item
+        android:id="@+id/navigation_writeAnswer"
+        android:icon="@drawable/write"
+        android:title="Write" />
+
+    <item
+        android:id="@+id/navigation_ask"
+        android:icon="@drawable/ask"
+        android:title="Ask" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_small"
+        android:title="Profile" />
+
+
+</menu>

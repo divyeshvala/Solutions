@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_question_only_layout"
+    >
+
+    <TextView
+        android:id="@+id/id_item_question_only_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/alegreya_sans_medium_italic"
+        android:text="This is the long question for testing purpose aa alright. Wait I have tmake it more longer?"
+        android:textColor="#242323"
+        android:textSize="22sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/id_item_question_only_profilePhoto"
+        android:layout_below="@+id/id_item_question_only_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/profile_small"
+        />
+
+    <ImageView
+        android:layout_below="@+id/id_item_question_only_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/circle_crop"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_only_author"
+        android:layout_toRightOf="@+id/id_item_question_only_profilePhoto"
+        android:layout_below="@+id/id_item_question_only_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Divyesh Vala"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/id_item_question_only_about"
+        android:layout_toRightOf="@+id/id_item_question_only_profilePhoto"
+        android:layout_below="@+id/id_item_question_only_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="Cse guy from mnnit."
+        android:textSize="13sp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_only_time"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/id_item_question_only_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="10 Aug"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+
+    <ImageButton
+        android:id="@+id/id_item_question_only_like"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:src="@drawable/like0"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/id_item_question_only_about"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        />
+    <TextView
+        android:id="@+id/id_item_question_only_numberOfLikes"
+        android:layout_toRightOf="@+id/id_item_question_only_like"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/id_item_question_only_about"
+        android:layout_marginLeft="2dp"
+        android:text="100+"
+        />
+
+    <TextView
+        android:id="@+id/id_item_question_only_writeAnswer"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/id_item_question_only_about"
+        android:layout_marginRight="20dp"
+        android:text="Write answer"
+        android:background="#fff"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/id_item_question_only_about"
+        android:text="Write answer"
+        android:background="#fff"
+        android:src="@drawable/write"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="120dp"
+        />
+
+</RelativeLayout>

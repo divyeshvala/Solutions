@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".WriteAnswer">
+
+    <TextView
+        android:id="@+id/id_writeAnswer_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/alegreya_sans_medium_italic"
+        android:text="This is the long question for testing purpose aa alright. Wait I have tmake it more longer?"
+        android:textColor="#242323"
+        android:textSize="22sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/id_writeAnswer_profilePhoto"
+        android:layout_below="@+id/id_writeAnswer_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/profile_small"
+        />
+
+    <ImageView
+        android:layout_below="@+id/id_writeAnswer_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/circle_crop"
+        />
+
+    <TextView
+        android:id="@+id/id_writeAnswer_author"
+        android:layout_toRightOf="@+id/id_writeAnswer_profilePhoto"
+        android:layout_below="@+id/id_writeAnswer_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Divyesh Vala"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/id_writeAnswer_about"
+        android:layout_toRightOf="@+id/id_writeAnswer_profilePhoto"
+        android:layout_below="@+id/id_writeAnswer_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="Cse guy from mnnit."
+        android:textSize="13sp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/id_writeAnswer_time"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/id_writeAnswer_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="10 Aug"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:id="@+id/id_writeAnswer_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_writeAnswer_about"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:scrollbars="vertical"
+        android:maxHeight="80dp"
+        android:hint="Write answer here."
+        android:textSize="19sp"
+        android:layout_above="@+id/id_writeAnswer_submitLayout"
+        android:layout_marginBottom="5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/id_writeAnswer_submitLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorNavIcon"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

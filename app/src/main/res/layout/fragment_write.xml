@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WriteFragment">
+
+    <LinearLayout
+        android:id="@+id/id_write_searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#B8D2FF"
+        >
+        <EditText
+            android:id="@+id/id_write_searchET"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search question here"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/id_write_searchBTN"
+            android:layout_toRightOf="@+id/id_write_searchET"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search30"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/write_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_write_searchLayout"
+        android:background="#f5f5f5"
+        />
+
+</RelativeLayout>
