@@ -96,7 +96,8 @@ public class WriteAnswer extends AppCompatActivity
         data.put("timeOfAnswer", current_time);
 
         dataRef.updateChildren(data);
-
+        
+        Toast.makeText(this, "Answer added successfully.", Toast.LENGTH_SHORT).show();
 
     }
 }
